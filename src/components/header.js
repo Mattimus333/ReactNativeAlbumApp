@@ -13,7 +13,7 @@ const Header = (props) => {
   );
 };
 
-Header.PropTypes = {
+Header.propTypes = {
   headerText: PropTypes.string.isRequired,
 };
 
