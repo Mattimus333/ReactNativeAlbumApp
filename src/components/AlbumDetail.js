@@ -1,5 +1,6 @@
 import React from 'react';
 import { Text, View, Image } from 'react-native';
+import Button from './Button'
 import Card from './Card';
 import CardItem from './CardItem';
 
@@ -15,6 +16,7 @@ const AlbumDetail = ({ album }) => {
 
   return (
     <Card>
+      
       <CardItem>
         <View style={thumbnailContainerStyle}>
           <Image
@@ -27,12 +29,18 @@ const AlbumDetail = ({ album }) => {
           <Text>{artist}</Text>
         </View>
       </CardItem>
+
       <CardItem>
       <Image
         source={{ uri: image }}
         style={imageStyle}
       />
       </CardItem>
+
+      <CardItem>
+        <Button />
+      </CardItem>
+
     </Card>
   );
 };
